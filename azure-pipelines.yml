@@ -33,13 +33,4 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Free Trial(2)(7cf923b5-3dfe-4124-9829-957f2b913b8b)'
-    appType: 'webApp'
-    WebAppName: 'TestDevopsDemo'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'WebAppResourceGroup'
-    SlotName: 'production'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
